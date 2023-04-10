@@ -1,0 +1,19 @@
+'''
+We are given a string and we need to reverse words of a given string
+
+Examples:
+
+Input : str =" geeks quiz practice code"
+Output : str = code practice quiz geeks  
+Input : str = "my name is laxmi"
+output : str= laxmi is name my 
+reverse the words in the given string program 
+
+'''
+input_string = input("Enter the input string:").split()
+list_string = []
+for each in input_string:
+    a = each
+    list_string.append(a)
+reverse_string = " ".join(list_string[::-1])
+print(reverse_string)
