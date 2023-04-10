@@ -1,0 +1,12 @@
+'''
+Remove i 'th character from the string
+
+'''
+string = input("Enter the input string:")
+number = int(input("Enter the number:"))
+length_string = len(string)
+new_string = ""
+for i in range(length_string):
+    if i != number:
+        new_string += string[i]
+print("New string after removing ",number,"index character in",string,"is",new_string)
