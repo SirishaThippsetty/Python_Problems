@@ -1,0 +1,13 @@
+'''
+Find length of a string in python (diff ways)
+'''
+# 1 way
+string = input("Enter the input:")
+length = len(string)
+print("The length of the given string",string,"is",length)
+
+# 2 way
+total = 0
+for i,a in enumerate(string):
+    total += 1
+print("The length of the given string",string,"is",total)
