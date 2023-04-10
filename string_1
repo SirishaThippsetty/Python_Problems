@@ -1,0 +1,49 @@
+'''
+Given a string. the task is to check if the 
+string is symmetrical and palindrome or not. 
+A string is said to be symmetrical if both 
+the halves of the string are the same and 
+a string is said to be a palindrome string 
+if one half of the string is the reverse of
+ the other half or if a string appears same when read forward or backward.
+
+Example: 
+
+Input: khokho
+Output: 
+The entered string is symmetrical
+The entered string is not palindrome
+
+Input:amaama
+Output:
+The entered string is symmetrical
+The entered string is palindrome
+
+'''
+
+input_string = input("Enter the string:").lower()
+length_string = len(input_string)
+if length_string % 2 == 0:
+    a = int(length_string/2)
+    first_part = input_string[:a]
+    second_part = input_string[a:]
+    if first_part == second_part and input_string != input_string[::-1]:
+        print("The entered string is symmetrical")
+        print("The entered string is not palindrome")
+    elif first_part == second_part and input_string == input_string[::-1]:
+        print("The entered string is symmetrical")
+        print("The entered string is palindrome")
+    elif first_part != second_part and input_string == input_string[::-1]:
+        print("The entered string is not symmetrical")
+        print("The entered string is palindrome")
+    else:
+        print("The entered string is not symmetrical")
+        print("The entered string is not palindrome")
+else:
+    if input_string == input_string[::-1]:
+         print("The entered string is not symmetrical")
+         print("The entered string is palindrome")
+    else:
+        print("The entered string is not symmetrical")
+        print("The entered string is not palindrome")
+
