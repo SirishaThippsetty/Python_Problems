@@ -1,0 +1,15 @@
+'''
+Python – Avoid Spaces in string length
+
+Input : test_str = ‘geeksforgeeks 33 best’ 
+Output : 19 
+Explanation : Total characters are 19. 
+
+Input : test_str = ‘geeksforgeeks best’ 
+Output : 17 
+Explanation : Total characters are 17 except spaces.
+
+'''
+string = input("Enter the string:")
+res = sum(not char.isspace() for char in string)
+print("Total characters without spaces for the given string",string,"is",res)
