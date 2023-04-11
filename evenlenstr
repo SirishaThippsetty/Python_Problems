@@ -1,0 +1,17 @@
+'''
+Given a string. The task is to print all words with even length in the given string.
+
+Input: s = "This is a python language"
+Output: This is python language
+
+Input: s = "i am laxmi"
+Output: am
+
+'''
+string = input("Enter the string:").split()
+new = []
+for each in string:
+    a = len(each)
+    if a % 2 == 0:
+        new.append(each)
+print(" ".join(new))
